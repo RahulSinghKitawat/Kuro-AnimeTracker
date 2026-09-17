@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#e1e0ff",
+          "on-tertiary-fixed-variant": "#005236",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#000000",
+          "on-primary": "#ffffff",
+          "surface-container-low": "#f4f2fd",
+          "surface-variant": "#e3e1ec",
+          "surface-container-high": "#e8e7f1",
+          "primary-fixed": "#e4e1e6",
+          "primary-fixed-dim": "#c8c5ca",
+          "on-secondary-container": "#fffbff",
+          "primary": "#000000",
+          "on-secondary-fixed": "#07006c",
+          "on-background": "#1a1b22",
+          "background": "#fbf8ff",
+          "on-secondary": "#ffffff",
+          "on-error-container": "#93000a",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#6ffbbe",
+          "error-container": "#ffdad6",
+          "on-primary-container": "#858387",
+          "on-primary-fixed-variant": "#47464a",
+          "on-tertiary-container": "#009668",
+          "primary-container": "#1b1b1e",
+          "secondary": "#4648d4",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container": "#eeedf7",
+          "on-tertiary-fixed": "#002113",
+          "surface-container-highest": "#e3e1ec",
+          "on-surface": "#1a1b22",
+          "inverse-primary": "#c8c5ca",
+          "inverse-on-surface": "#f1effa",
+          "outline-variant": "#c8c5cb",
+          "secondary-container": "#6063ee",
+          "inverse-surface": "#2f3038",
+          "surface-dim": "#dad9e3",
+          "secondary-fixed-dim": "#c0c1ff",
+          "on-tertiary": "#ffffff",
+          "surface": "#fbf8ff",
+          "tertiary-container": "#002113",
+          "on-secondary-fixed-variant": "#2f2ebe",
+          "error": "#ba1a1a",
+          "surface-bright": "#fbf8ff",
+          "outline": "#77767b",
+          "on-surface-variant": "#47464b",
+          "surface-tint": "#5f5e61",
+          "on-primary-fixed": "#1b1b1e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin": "3rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "0.75rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Manrope"
+          ],
+          "headline-lg-mobile": [
+            "Manrope"
+          ],
+          "headline-md": [
+            "Manrope"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Manrope"
+          ],
+          "caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Manrope"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-mono": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Manrope"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "caption": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-surface-variant"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="tracker" href="#"><img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wdn4IsyjTwMWBU1oK5DUJFQBH3aiJziMef1TsFc4OxxsUlgZBtK2E-iHKQotnoBqNopziFOGFbJVsjj8jhcr2ma-OtHwqlrPkazraYY3xdqyOCJ17t3kpa91K9etRKhjmtBCUZJ0CqexRNpcLT6GhwAQ7W5FYDyn0RmXwrElmX6f6CrZ0igf14SOKMCnFkih8CA8SZJTkSUH74XA--q4k1blotoNJ1smtF4wEb1ZXLJ-XqkUkbw4fZ9U0l"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Kuro</span></a><nav class="hidden md:flex items-center gap-space-lg h-16" data-active-classes="text-on-surface font-headline-sm border-b border-primary"><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="tracker" href="#">My Tracker</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="discover" href="#">Discover &amp; Catalog</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="seasonal" href="#">Seasonal</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="stats" href="#">Stats</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded border border-surface-variant text-on-surface-variant hover:border-outline transition-colors focus:outline-none" data-path="search" href="#"><span class="material-symbols-outlined text-sm text-outline">search</span><span class="font-body-sm text-body-sm text-outline pr-space-md">Search titles, studios...</span><kbd class="font-label-mono text-caption px-1.5 py-0.5 bg-surface-container-lowest text-on-surface-variant rounded border border-surface-variant">⌘K</kbd></a><button aria-label="Notifications" class="p-1.5 text-on-surface-variant hover:text-on-surface transition-colors rounded focus:outline-none"><span class="material-symbols-outlined text-headline-sm">notifications</span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-surface-variant"><a aria-label="Profile" class="focus:outline-none rounded-full ring-1 ring-surface-variant hover:ring-outline transition-all" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UAZ3r52hCkxfWDimtyiM-6VWVjl6gKxx9pNh4WudEtHdYi7R9ymR7rzkw-Y1DH5UoeRjbmbUHy9gIn3fHDk96YChhBuh68AbgKYWrFzbknDrP2ve3KDMDn1M-PwLBB0x_WA7Au_9kHYVgyCoDoYz4rmAX3w4C_u99Aukq4SZD3wSuc91o8rvZBqVPisB97knITK4LQ0hl-dPXRb9dZyfZ1dk8qEC5Mja63FcuRGAJLTEMal5CVWKReAXZI"></a></div></div></div></header><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-md lg:py-space-lg flex flex-col gap-space-lg">
+<!-- Header & Breadcrumbs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm"><div class="space-y-1"><div class="flex items-center gap-space-xs font-label-mono text-caption text-outline tracking-wider uppercase"><span class="">My Tracker</span><span class="text-outline-variant">/</span><span class="text-primary font-medium">New Entry</span></div><h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight pt-1">Add Entry</h1><p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Search and catalog a series to update your personal archive.</p></div><div class="flex items-center shrink-0 pt-2 md:pt-0"><a class="text-outline hover:text-primary transition-colors font-label-mono text-caption inline-flex items-center gap-1 underline underline-offset-4" href="#"><span class="material-symbols-outlined text-sm">link</span><span class="">Import from MAL / AniList</span></a></div></div>
+<!-- Main Archivist Workspace Layout (55% / 45%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Search & Catalog Discovery (7 Cols ~ 58%) -->
+<section class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Search Bar Component -->
+<div class="relative flex items-center bg-surface-container-lowest rounded border border-surface-variant focus-within:border-outline transition-colors"><span class="material-symbols-outlined absolute left-space-sm text-outline pointer-events-none text-lg">search</span><input class="w-full pl-10 pr-16 py-3 bg-transparent text-on-surface font-body-md text-body-md rounded focus:outline-none placeholder:text-outline" id="anime-search-input" placeholder="Search title, studio, or genre..." type="text" value="Sousou no Frieren"><button aria-label="Clear input" class="absolute right-3 p-1 text-outline hover:text-on-surface transition-colors rounded" id="search-clear-btn"><span class="material-symbols-outlined text-sm">close</span></button></div>
+<!-- Search Results Stream -->
+<div class="flex flex-col gap-space-sm" id="search-results-list"><article class="catalog-card relative bg-surface-container-lowest p-space-md rounded border border-primary/20 shadow-xs flex gap-space-md items-start" data-active="true"><div class="relative w-20 sm:w-24 aspect-[3/4] shrink-0 overflow-hidden rounded bg-surface-container-high"><img class="w-full h-full object-cover" data-alt="Anime poster art for Frieren: Beyond Journey's End" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyTHMC08TtQnh3iK4ugUE_iGHC31zIrx2tj6mZT6e4ow3vNXDMKSr6fnQKqWqwbsZFJB16oecAzaxZX3QTfuMR4XTWOXGTybwTkebom9XWNNGiE9_5rQ8ytMybhXYrtTQeT3Izd-5Qo6vbpfEAG4fThOP54Ovis_GO6pse-u84DOKNFDHSkQGwXx5diKROA7DCBL3or-AAiFf4mgB2rUwhaptyDfgfddPHuYeCJDoyIZWYzVr9uAD9Xg"><span class="absolute top-1 left-1 font-label-mono text-caption bg-primary text-on-primary px-1.5 py-0.5 rounded">TV</span></div><div class="flex flex-col justify-between flex-1 min-w-0 py-0.5"><div class="space-y-1.5"><div class="flex items-center justify-between gap-space-xs"><span class="font-label-mono text-caption text-secondary font-medium uppercase tracking-wider">Active Selection</span><div class="flex items-center gap-1 font-label-mono text-caption text-on-surface font-medium"><span class="text-amber-500 text-xs">★</span> 9.38</div></div><h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">Frieren: Beyond Journey's End</h3><p class="font-caption text-caption text-outline truncate">葬送のフリーレン • Madhouse • Fall 2023</p><p class="font-label-mono text-caption text-on-surface-variant pt-1">28 Episodes • High Fantasy / Drama</p></div><div class="mt-space-md flex items-center justify-between border-t border-surface-variant pt-space-xs"><span class="font-caption text-caption text-outline">Finished Airing</span><span class="font-label-mono text-caption text-primary flex items-center gap-1 font-medium">Selected for logging <span class="material-symbols-outlined text-xs">check</span></span></div></div></article><article class="catalog-card relative bg-surface-container-lowest p-space-md rounded border border-surface-variant hover:border-outline shadow-xs transition-all cursor-pointer flex gap-space-md items-start opacity-75 hover:opacity-100" data-active="false"><div class="relative w-20 sm:w-24 aspect-[3/4] shrink-0 overflow-hidden rounded bg-surface-container-high"><img class="w-full h-full object-cover" data-alt="Dungeon Meshi cover visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWWuOHSHZ8CxN_JoZ8GbT3TvM7-QwXXcVjonU-93i3EDunm1g6rmLN4GLottpd8q77LIPvQR5mzwn3IBGYQ15avoi5jUO0K0NA6Q0nphL-POky-TgWiQrLAkF1c2mPVmVyscHXjKFBWc4sBpMda76cSDdlxmEfkiTc9bRXmxaz3uweSnRGrXGMYFJw17z6Z9sT7o3jXyOQLOL6cHgk-22PaGPmYziFvnLBwStRrUINjrbCNfCk8LNe8w"><span class="absolute top-1 left-1 font-label-mono text-caption bg-surface-container-highest text-on-surface px-1.5 py-0.5 rounded">TV</span></div><div class="flex flex-col justify-between flex-1 min-w-0 py-0.5"><div class="space-y-1.5"><div class="flex items-center justify-between gap-space-xs"><span class="font-label-mono text-caption text-outline">Studio Trigger</span><div class="flex items-center gap-1 font-label-mono text-caption text-on-surface"><span class="text-amber-500 text-xs">★</span> 8.64</div></div><h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">Delicious in Dungeon</h3><p class="font-caption text-caption text-outline truncate">ダンジョン飯 • Winter 2024</p><p class="font-label-mono text-caption text-on-surface-variant pt-1">24 Episodes • Fantasy / Adventure</p></div><div class="mt-space-md flex items-center justify-between border-t border-surface-variant pt-space-xs"><span class="font-caption text-caption text-outline">Finished Airing</span><span class="font-label-mono text-caption text-outline hover:text-primary flex items-center gap-1 transition-colors">Select series <span class="material-symbols-outlined text-xs">chevron_right</span></span></div></div></article></div>
+</section>
+<!-- Right Column: Entry Configuration & Tagging Drawer (5 Cols ~ 42%) -->
+<section class="lg:col-span-5 flex flex-col gap-space-md sticky top-20">
+<div class="bg-surface-container-lowest rounded shadow-md p-space-md md:p-space-lg flex flex-col gap-space-md"><div class="pb-space-sm border-b border-surface-variant"><div class="flex items-center justify-between text-outline font-label-mono text-caption mb-1"><span class="">MADHOUSE • 28 EPS</span><span class="text-primary font-medium">#JP-2023-8812</span></div><h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Frieren: Beyond Journey's End</h2></div><div class="space-y-space-xs"><div class="flex items-center justify-between"><label class="font-label-md text-label-md text-on-surface font-medium">Watch Status</label></div><div class="grid grid-cols-5 gap-1.5" id="status-button-group"><button class="status-pill py-2 rounded font-label-mono text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container text-center transition-all" data-status="watching" type="button">Watching</button><button class="status-pill active py-2 rounded font-label-mono text-caption bg-primary text-on-primary font-medium text-center shadow-xs transition-all" data-status="completed" type="button">Completed</button><button class="status-pill py-2 rounded font-label-mono text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container text-center transition-all" data-status="plan" type="button">Plan</button><button class="status-pill py-2 rounded font-label-mono text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container text-center transition-all" data-status="hold" type="button">On Hold</button><button class="status-pill py-2 rounded font-label-mono text-caption bg-surface-container-low text-on-surface-variant hover:bg-surface-container text-center transition-all" data-status="dropped" type="button">Dropped</button></div></div><div class="space-y-space-xs pt-space-xs"><div class="flex items-center justify-between"><label class="font-label-md text-label-md text-on-surface font-medium">Episode Progress</label><button class="font-label-mono text-caption text-outline hover:text-primary transition-colors" id="set-all-completed" type="button">All Completed</button></div><div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded"><div class="flex items-center gap-space-md"><button aria-label="Decrease episode" class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center shadow-xs transition-colors" id="ep-decrement" type="button"><span class="material-symbols-outlined text-sm">remove</span></button><div class="flex items-baseline gap-1 font-label-mono"><span class="text-headline-md font-semibold text-primary" id="ep-current">28</span><span class="text-body-sm text-outline">/ 28</span></div><button aria-label="Increase episode" class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center shadow-xs transition-colors" id="ep-increment" type="button"><span class="material-symbols-outlined text-sm">add</span></button></div><span class="font-label-mono text-caption text-outline" id="ep-percentage">100% complete</span></div></div><div class="space-y-space-xs pt-space-xs"><div class="flex items-center justify-between"><label class="font-label-md text-label-md text-on-surface font-medium">Score</label><span class="font-label-mono text-caption text-primary font-semibold">10 / 10 • Masterpiece</span></div><div class="flex items-center gap-1 pt-1"><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-amber-500 text-lg cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span></div></div><div class="space-y-space-xs pt-space-xs"><div class="flex items-center justify-between"><label class="font-label-md text-label-md text-on-surface font-medium">Tags</label></div><div class="flex flex-wrap items-center gap-1.5" id="tag-container"><button class="tag-chip active px-2.5 py-1 rounded-full font-label-mono text-caption bg-secondary-fixed text-on-secondary-fixed font-medium transition-all" type="button">✓ Masterpiece</button><button class="tag-chip px-2.5 py-1 rounded-full font-label-mono text-caption bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" type="button">+ Comfort Rewatch</button><div class="flex items-center"><input class="px-2 py-1 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-l focus:outline-none w-28 placeholder:text-outline text-xs" id="custom-tag-input" placeholder="New tag..." type="text"><button class="px-2 py-1 rounded-r font-label-mono text-caption bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors text-xs" id="add-tag-btn" type="button">+</button></div></div></div><div class="grid grid-cols-2 gap-space-sm pt-space-xs"><div><label class="font-label-mono text-caption text-outline block mb-1">Started</label><input class="w-full px-2 py-1.5 bg-surface-container-low text-on-surface font-label-mono text-caption rounded focus:outline-none" type="date" value="2023-10-06"></div><div><label class="font-label-mono text-caption text-outline block mb-1">Finished</label><input class="w-full px-2 py-1.5 bg-surface-container-low text-on-surface font-label-mono text-caption rounded focus:outline-none" type="date" value="2024-03-22"></div></div><div class="space-y-space-xs pt-space-xs"><label class="font-label-md text-label-md text-on-surface font-medium">Personal Notes</label><textarea class="w-full p-space-sm bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:bg-surface-container transition-colors resize-none placeholder:text-outline leading-relaxed border-0" placeholder="Add thoughts, reflections, memorable quotes..." rows="3">A masterclass in temporal scale and the weight of fleeting human connections. Evan Call's orchestral leitmotifs in episode 28 elevate the final farewell to pure cinema.</textarea></div><div class="pt-space-sm flex items-center gap-space-md"><button class="flex-1 py-3 px-space-md bg-primary text-on-primary rounded font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs shadow-xs hover:opacity-90 active:scale-[0.99] transition-all" id="save-entry-btn" type="button"><span class="">Save to Tracker</span><span class="material-symbols-outlined text-sm">arrow_forward</span></button><button class="py-3 px-space-md text-outline hover:text-on-surface font-label-mono text-caption transition-colors" type="button">Cancel</button></div></div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Interactive Stepper Logic
+    const epCurrent = document.getElementById('ep-current');
+    const epInc = document.getElementById('ep-increment');
+    const epDec = document.getElementById('ep-decrement');
+    const epBar = document.getElementById('ep-progress-bar');
+    const epPct = document.getElementById('ep-percentage');
+    const setAllBtn = document.getElementById('set-all-completed');
+    const maxEps = 28;
+    let count = 28;
+
+    function updateProgress(val) {
+      count = Math.max(0, Math.min(maxEps, val));
+      if (epCurrent) epCurrent.textContent = count;
+      const pct = Math.round((count / maxEps) * 100);
+      if (epBar) epBar.style.width = pct + '%';
+      if (epPct) epPct.textContent = pct + '% complete';
+    }
+
+    if (epInc) epInc.addEventListener('click', () => updateProgress(count + 1));
+    if (epDec) epDec.addEventListener('click', () => updateProgress(count - 1));
+    if (setAllBtn) setAllBtn.addEventListener('click', () => updateProgress(maxEps));
+
+    // Status Selector logic
+    const statusBtns = document.querySelectorAll('.status-pill');
+    statusBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        statusBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-xs', 'font-medium');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-xs', 'font-medium');
+      });
+    });
+
+    // Custom Tag Generator logic
+    const tagContainer = document.getElementById('tag-container');
+    const customTagInput = document.getElementById('custom-tag-input');
+    const addTagBtn = document.getElementById('add-tag-btn');
+
+    function addNewTag() {
+      const text = customTagInput ? customTagInput.value.trim() : '';
+      if (!text || !tagContainer) return;
+      
+      const newChip = document.createElement('button');
+      newChip.type = 'button';
+      newChip.className = 'tag-chip active px-2 py-1 rounded-full font-label-mono text-caption bg-secondary-fixed text-on-secondary-fixed font-medium transition-all';
+      newChip.textContent = '✓ ' + text;
+      
+      newChip.addEventListener('click', function() {
+        if (newChip.classList.contains('active')) {
+          newChip.classList.remove('active', 'bg-secondary-fixed', 'text-on-secondary-fixed', 'font-medium');
+          newChip.classList.add('bg-surface-container', 'text-on-surface-variant');
+          newChip.textContent = '+ ' + text;
+        } else {
+          newChip.classList.add('active', 'bg-secondary-fixed', 'text-on-secondary-fixed', 'font-medium');
+          newChip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          newChip.textContent = '✓ ' + text;
+        }
+      });
+
+      tagContainer.appendChild(newChip);
+      customTagInput.value = '';
+    }
+
+    if (addTagBtn) addTagBtn.addEventListener('click', addNewTag);
+    if (customTagInput) {
+      customTagInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          addNewTag();
+        }
+      });
+    }
+
+    // Interactive Tag chip toggles
+    const existingTags = document.querySelectorAll('.tag-chip');
+    existingTags.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const text = chip.textContent.replace('✓ ', '').replace('+ ', '').trim();
+        if (chip.classList.contains('active')) {
+          chip.classList.remove('active', 'bg-secondary-fixed', 'text-on-secondary-fixed', 'font-medium');
+          chip.classList.add('bg-surface-container', 'text-on-surface-variant');
+          chip.textContent = '+ ' + text;
+        } else {
+          chip.classList.add('active', 'bg-secondary-fixed', 'text-on-secondary-fixed', 'font-medium');
+          chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          chip.textContent = '✓ ' + text;
+        }
+      });
+    });
+
+    // Clear search bar
+    const clearBtn = document.getElementById('search-clear-btn');
+    const searchInput = document.getElementById('anime-search-input');
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchInput.focus();
+      });
+    }
+
+    // Save notification micro-feedback
+    const saveBtn = document.getElementById('save-entry-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const originalContent = saveBtn.innerHTML;
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Logged Successfully';
+        saveBtn.classList.add('bg-secondary');
+        setTimeout(() => {
+          saveBtn.innerHTML = originalContent;
+          saveBtn.classList.remove('bg-secondary');
+        }, 1800);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-mono text-caption"><span class="">KURO ANIME LOG</span><span class="">•</span><span class="">MINIMALIST CATALOG ARCHIVE</span></div><div class="text-on-surface-variant font-caption text-caption">© 2025 Kuro. Architectural tracking for disciplined media consumption.</div></div></footer>
+
+</body></html>

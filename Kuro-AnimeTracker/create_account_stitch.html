@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#e1e0ff",
+          "on-tertiary-fixed-variant": "#005236",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#000000",
+          "on-primary": "#ffffff",
+          "surface-container-low": "#f4f2fd",
+          "surface-variant": "#e3e1ec",
+          "surface-container-high": "#e8e7f1",
+          "primary-fixed": "#e4e1e6",
+          "primary-fixed-dim": "#c8c5ca",
+          "on-secondary-container": "#fffbff",
+          "primary": "#000000",
+          "on-secondary-fixed": "#07006c",
+          "on-background": "#1a1b22",
+          "background": "#fbf8ff",
+          "on-secondary": "#ffffff",
+          "on-error-container": "#93000a",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#6ffbbe",
+          "error-container": "#ffdad6",
+          "on-primary-container": "#858387",
+          "on-primary-fixed-variant": "#47464a",
+          "on-tertiary-container": "#009668",
+          "primary-container": "#1b1b1e",
+          "secondary": "#4648d4",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container": "#eeedf7",
+          "on-tertiary-fixed": "#002113",
+          "surface-container-highest": "#e3e1ec",
+          "on-surface": "#1a1b22",
+          "inverse-primary": "#c8c5ca",
+          "inverse-on-surface": "#f1effa",
+          "outline-variant": "#c8c5cb",
+          "secondary-container": "#6063ee",
+          "inverse-surface": "#2f3038",
+          "surface-dim": "#dad9e3",
+          "secondary-fixed-dim": "#c0c1ff",
+          "on-tertiary": "#ffffff",
+          "surface": "#fbf8ff",
+          "tertiary-container": "#002113",
+          "on-secondary-fixed-variant": "#2f2ebe",
+          "error": "#ba1a1a",
+          "surface-bright": "#fbf8ff",
+          "outline": "#77767b",
+          "on-surface-variant": "#47464b",
+          "surface-tint": "#5f5e61",
+          "on-primary-fixed": "#1b1b1e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin": "3rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "0.75rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Manrope"
+          ],
+          "headline-lg-mobile": [
+            "Manrope"
+          ],
+          "headline-md": [
+            "Manrope"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Manrope"
+          ],
+          "caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Manrope"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-mono": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Manrope"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "caption": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-surface-variant"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="my-tracker" href="#"><img alt="Brand logo. - Primary color: #1a1a1a
+- Font: spaceGrotesk
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wdn4IsyjTwMWBU1oK5DUJFQBH3aiJziMef1TsFc4OxxsUlgZBtK2E-iHKQotnoBqNopziFOGFbJVsjj8jhcr2ma-OtHwqlrPkazraYY3xdqyOCJ17t3kpa91K9etRKhjmtBCUZJ0CqexRNpcLT6GhwAQ7W5FYDyn0RmXwrElmX6f6CrZ0igf14SOKMCnFkih8CA8SZJTkSUH74XA--q4k1blotoNJ1smtF4wEb1ZXLJ-XqkUkbw4fZ9U0l"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Kuro</span></a><nav class="hidden md:flex items-center gap-space-lg h-16" data-active-classes="text-on-surface font-headline-sm border-b border-primary"><a aria-current="page" class="h-full flex items-center transition-colors text-on-surface font-headline-sm border-b border-primary" data-path="my-tracker" href="#">My Tracker</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="discover-and-catalog" href="#">Discover &amp; Catalog</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="seasonal" href="#">Seasonal</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="stats" href="#">Stats</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded border border-surface-variant text-on-surface-variant hover:border-outline transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm text-outline">search</span><span class="font-body-sm text-body-sm text-outline pr-space-md">Search titles, studios...</span><kbd class="font-label-mono text-caption px-1.5 py-0.5 bg-surface-container-lowest text-on-surface-variant rounded border border-surface-variant">⌘K</kbd></div><button aria-label="Notifications" class="p-1.5 text-on-surface-variant hover:text-on-surface transition-colors rounded focus:outline-none"><span class="material-symbols-outlined text-headline-sm">notifications</span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-surface-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UAZ3r52hCkxfWDimtyiM-6VWVjl6gKxx9pNh4WudEtHdYi7R9ymR7rzkw-Y1DH5UoeRjbmbUHy9gIn3fHDk96YChhBuh68AbgKYWrFzbknDrP2ve3KDMDn1M-PwLBB0x_WA7Au_9kHYVgyCoDoYz4rmAX3w4C_u99Aukq4SZD3wSuc91o8rvZBqVPisB97knITK4LQ0hl-dPXRb9dZyfZ1dk8qEC5Mja63FcuRGAJLTEMal5CVWKReAXZI"/></div></div></div></header><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-xl">
+<!-- Breadcrumb / Utility Status Bar -->
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-caption">
+<span class="text-on-surface font-label-md">ARCHIVE SYSTEM</span>
+<span class="text-outline">/</span>
+<span>ACCESS CONTROL</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-label-md">REGISTER NEW PROFILE</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm font-label-mono text-caption text-on-surface-variant bg-surface-container px-space-sm py-1 rounded">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span>PROTOCOL ENCRYPTION v4.2 • ACTIVE</span>
+</div>
+</div>
+<!-- Main Dual-Panel Architecture Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col lg:flex-row">
+<!-- Left Atmospheric Architectural Panel -->
+<div class="w-full lg:w-[45%] bg-primary-container text-surface p-space-lg lg:p-space-xl flex flex-col justify-between relative overflow-hidden">
+<!-- Subtle Ambient Vignette -->
+<div class="absolute -right-24 -bottom-24 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -top-12 w-64 h-64 bg-tertiary-fixed-dim/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col">
+<!-- Japanese Typographic Monogram & Accent -->
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 bg-secondary-container rounded-sm"></span>
+<span class="font-label-mono text-caption tracking-widest uppercase text-surface-variant">Archival Watchlist System</span>
+</div>
+<span class="font-caption text-caption text-on-primary-container tracking-wider">静寂と記録のアーカイブ</span>
+</div>
+<!-- Hero Editorial Statement -->
+<h1 class="font-headline-xl text-headline-xl text-surface-container-lowest font-headline-xl tracking-tight mb-space-sm">
+            Begin your personal chronicle.
+          </h1>
+<p class="font-body-md text-body-md text-surface-variant leading-relaxed mb-space-xl">
+            A disciplined, ad-free haven for cataloging anime, organizing seasonal queues, and capturing thoughtful reflections without commercial distortion.
+          </p>
+<!-- Core Feature Architecture Grid -->
+<div class="space-y-space-md mb-space-xl">
+<!-- Feature 1 -->
+<div class="flex items-start gap-space-md p-space-md bg-surface-container-highest/10 rounded-lg backdrop-blur-sm transition-colors hover:bg-surface-container-highest/20">
+<div class="w-9 h-9 rounded bg-surface-container-lowest/10 flex items-center justify-center text-surface shrink-0">
+<span class="material-symbols-outlined text-body-lg">tune</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-surface">Tactile Episode Stepper</span>
+<span class="font-label-mono text-caption px-1.5 py-0.5 rounded bg-surface-container-lowest/15 text-tertiary-fixed font-label-md">0.05s Sync</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-variant mt-0.5">Physical micro-actions with local offline cache and instantaneous optimistic updates.</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex items-start gap-space-md p-space-md bg-surface-container-highest/10 rounded-lg backdrop-blur-sm transition-colors hover:bg-surface-container-highest/20">
+<div class="w-9 h-9 rounded bg-surface-container-lowest/10 flex items-center justify-center text-surface shrink-0">
+<span class="material-symbols-outlined text-body-lg">sync_alt</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-surface">AniList &amp; MAL Two-Way Bridge</span>
+<span class="font-label-mono text-caption px-1.5 py-0.5 rounded bg-surface-container-lowest/15 text-surface-variant">Instant Import</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-variant mt-0.5">Bi-directional zero-loss migration protocol for your preexisting library entries.</span>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex items-start gap-space-md p-space-md bg-surface-container-highest/10 rounded-lg backdrop-blur-sm transition-colors hover:bg-surface-container-highest/20">
+<div class="w-9 h-9 rounded bg-surface-container-lowest/10 flex items-center justify-center text-surface shrink-0">
+<span class="material-symbols-outlined text-body-lg">security</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-surface">Ad-Free &amp; Privacy First</span>
+<span class="font-label-mono text-caption px-1.5 py-0.5 rounded bg-surface-container-lowest/15 text-surface-variant">Zero Telemetry</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-variant mt-0.5">No tracking pixels, no retail popups, no algorithmic distractions. Complete sovereignty.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Left Panel Footer Accent Card -->
+<div class="relative z-10 pt-space-lg mt-auto">
+<div class="p-space-md rounded bg-surface-container-highest/10 backdrop-blur-sm">
+<div class="flex items-center gap-space-xs text-tertiary-fixed font-label-mono text-caption mb-1">
+<span class="material-symbols-outlined text-body-sm">lock_open</span>
+<span>PUBLIC PREVIEWS: ALWAYS ACCESSIBLE</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-variant">
+              Browse trending seasons, staff directories, and character databases freely. An archivist account preserves your personal watchlist, scores, and review journal.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-md text-surface-dim font-label-mono text-caption">
+<span>LOC: TOKYO / CLOUD</span>
+<span>SECURE VAULT • EST. 2025</span>
+</div>
+</div>
+</div>
+<!-- Right Form Processing Panel -->
+<div class="w-full lg:w-[55%] p-space-lg lg:p-space-xl flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<!-- Header Bar: Switcher & Security Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg pb-space-md bg-surface-container-lowest">
+<!-- Segmented Mode Switcher -->
+<div class="flex items-center bg-surface-container p-1 rounded">
+<a class="px-space-md py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">
+                Sign In
+              </a>
+<span class="px-space-md py-1 rounded bg-surface-container-lowest font-headline-sm text-body-sm text-on-surface shadow-sm">
+                Create Account
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-mono text-caption text-secondary font-label-md">ENCRYPTED PROTOCOL</span>
+</div>
+</div>
+<!-- Section Headings -->
+<div class="mb-space-lg">
+<div class="flex items-center gap-space-xs font-label-mono text-caption text-outline mb-1">
+<span>NEW ARCHIVIST REGISTRATION</span>
+<span>•</span>
+<span class="text-tertiary-container bg-tertiary-fixed px-1.5 py-0.2 rounded font-label-md">Free Forever</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Create your account
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Start tracking your anime journey with zero ads and pure archival taxonomy.
+            </p>
+</div>
+<!-- Quick Third-Party Auth -->
+<div class="mb-space-lg">
+<button class="w-full flex items-center justify-center gap-space-sm py-2.5 px-space-md bg-surface-container-low hover:bg-surface-container transition-colors rounded text-on-surface font-headline-sm text-body-md" type="button">
+<svg class="w-4 h-4" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Sign up with Google</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="relative flex items-center justify-center mb-space-lg">
+<div class="w-full h-px bg-surface-variant"></div>
+<span class="absolute bg-surface-container-lowest px-space-md font-label-mono text-caption text-outline uppercase tracking-wider">
+              or register with email
+            </span>
+</div>
+<!-- Registration Form -->
+<form class="space-y-space-md" id="archivist-register-form" onsubmit="event.preventDefault();">
+<!-- Archivist Handle -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-headline-sm text-body-sm text-on-surface" for="handle">Archivist Handle</label>
+<span class="font-caption text-caption text-outline">Unique public identifier</span>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-label-mono text-body-md text-outline">@</span>
+<input class="w-full pl-8 pr- space-md py-2 bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-label-mono text-body-md rounded focus:outline-none focus:ring-1 focus:ring-primary transition-all placeholder:text-outline/60" id="handle" name="handle" placeholder="chihaya_ayase" required="" type="text"/>
+</div>
+</div>
+<!-- Email Address -->
+<div>
+<label class="block font-headline-sm text-body-sm text-on-surface mb-1" for="email">Email Address</label>
+<input class="w-full px-space-md py-2 bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded focus:outline-none focus:ring-1 focus:ring-primary transition-all placeholder:text-outline/60" id="email" name="email" placeholder="archivist@kuro-media.org" required="" type="email"/>
+</div>
+<!-- Password Fields: Side by Side on Desktop -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Password -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-headline-sm text-body-sm text-on-surface" for="password">Password</label>
+<span class="font-label-mono text-caption text-outline" id="strength-text">Min. 8 chars</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full px-space-md py-2 pr-10 bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-label-mono text-body-md rounded focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="password" name="password" placeholder="••••••••••••" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-2.5 text-outline hover:text-on-surface focus:outline-none" id="toggle-pw" type="button">
+<span class="material-symbols-outlined text-body-md">visibility</span>
+</button>
+</div>
+<!-- Strength Meter Micro-Bar -->
+<div class="flex gap-1 mt-1.5 h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full w-1/3 bg-secondary transition-all" id="str-1"></div>
+<div class="h-full w-1/3 bg-secondary-fixed transition-all" id="str-2"></div>
+<div class="h-full w-1/3 bg-surface-variant transition-all" id="str-3"></div>
+</div>
+</div>
+<!-- Confirm Password -->
+<div>
+<label class="block font-headline-sm text-body-sm text-on-surface mb-1" for="confirm-password">Confirm Password</label>
+<input class="w-full px-space-md py-2 bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-label-mono text-body-md rounded focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="confirm-password" name="confirm-password" placeholder="••••••••••••" required="" type="password"/>
+</div>
+</div>
+<!-- Checkbox Protocols -->
+<div class="space-y-space-xs pt-space-xs">
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input class="mt-1 rounded text-primary focus:ring-0 cursor-pointer" required="" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                  I agree to the <a class="text-on-surface underline hover:text-secondary" href="#">Terms of Service</a> and <a class="text-on-surface underline hover:text-secondary" href="#">Privacy Protocol</a>, and accept zero ad-tracking.
+                </span>
+</label>
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input class="mt-1 rounded text-primary focus:ring-0 cursor-pointer" id="sync-opt" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                  Import existing watchlist from MyAnimeList or AniList after setup <span class="font-label-mono text-caption text-outline">(Optional)</span>
+</span>
+</label>
+</div>
+<!-- Primary Submission CTA -->
+<button class="w-full mt-space-md py-3 px-space-md bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-body-md rounded transition-all flex items-center justify-center gap-space-sm group shadow-sm" id="submit-btn" type="submit">
+<span>Create Archivist Account</span>
+<span class="material-symbols-outlined text-body-md group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Account Existence Switcher & Security Baseline -->
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm text-body-sm">
+<span class="text-on-surface-variant font-body-sm">Already have an archivist account?</span>
+<a class="font-headline-sm text-on-surface hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>Sign In instead</span>
+<span class="material-symbols-outlined text-body-sm">arrow_outward</span>
+</a>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container rounded flex items-center justify-between font-label-mono text-caption text-outline">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-body-sm text-on-tertiary-container">verified_user</span>
+<span>Zero ad-tracking • Sovereignty focused • Local fallback</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs">
+<a class="hover:text-on-surface transition-colors" href="#">PRIVACY PROTOCOL</a>
+<span>•</span>
+<a class="hover:text-on-surface transition-colors" href="#">TERMS</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      // Micro-interactions for interactive feedback
+      const pwInput = document.getElementById('password');
+      const toggleBtn = document.getElementById('toggle-pw');
+      const str1 = document.getElementById('str-1');
+      const str2 = document.getElementById('str-2');
+      const str3 = document.getElementById('str-3');
+      const strengthText = document.getElementById('strength-text');
+
+      if (toggleBtn && pwInput) {
+        toggleBtn.addEventListener('click', () => {
+          const type = pwInput.getAttribute('type') === 'password' ? 'text' : 'password';
+          pwInput.setAttribute('type', type);
+          toggleBtn.firstElementChild.textContent = type === 'password' ? 'visibility' : 'visibility_off';
+        });
+      }
+
+      if (pwInput) {
+        pwInput.addEventListener('input', (e) => {
+          const val = e.target.value;
+          if (val.length === 0) {
+            str1.className = 'h-full w-1/3 bg-surface-variant transition-all';
+            str2.className = 'h-full w-1/3 bg-surface-variant transition-all';
+            str3.className = 'h-full w-1/3 bg-surface-variant transition-all';
+            strengthText.textContent = 'Min. 8 chars';
+          } else if (val.length < 6) {
+            str1.className = 'h-full w-1/3 bg-error transition-all';
+            str2.className = 'h-full w-1/3 bg-surface-variant transition-all';
+            str3.className = 'h-full w-1/3 bg-surface-variant transition-all';
+            strengthText.textContent = 'Weak';
+          } else if (val.length < 10) {
+            str1.className = 'h-full w-1/3 bg-secondary-container transition-all';
+            str2.className = 'h-full w-1/3 bg-secondary-container transition-all';
+            str3.className = 'h-full w-1/3 bg-surface-variant transition-all';
+            strengthText.textContent = 'Medium';
+          } else {
+            str1.className = 'h-full w-1/3 bg-on-tertiary-container transition-all';
+            str2.className = 'h-full w-1/3 bg-on-tertiary-container transition-all';
+            str3.className = 'h-full w-1/3 bg-on-tertiary-container transition-all';
+            strengthText.textContent = 'Robust';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-mono text-caption"><span>KURO ANIME LOG</span><span>•</span><span>MINIMALIST CATALOG ARCHIVE</span></div><div class="text-on-surface-variant font-caption text-caption">© 2025 Kuro. Architectural tracking for disciplined media consumption.</div></div></footer></body></html>

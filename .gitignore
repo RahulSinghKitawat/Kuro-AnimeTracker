@@ -1,0 +1,14 @@
+# Global Git Ignore
+.DS_Store
+.vscode/
+
+# Ensure all node_modules are ignored everywhere
+node_modules/
+
+# Ensure all env files are ignored everywhere
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env

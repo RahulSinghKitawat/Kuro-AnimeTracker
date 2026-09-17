@@ -1,0 +1,447 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#e1e0ff",
+          "on-tertiary-fixed-variant": "#005236",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#000000",
+          "on-primary": "#ffffff",
+          "surface-container-low": "#f4f2fd",
+          "surface-variant": "#e3e1ec",
+          "surface-container-high": "#e8e7f1",
+          "primary-fixed": "#e4e1e6",
+          "primary-fixed-dim": "#c8c5ca",
+          "on-secondary-container": "#fffbff",
+          "primary": "#000000",
+          "on-secondary-fixed": "#07006c",
+          "on-background": "#1a1b22",
+          "background": "#fbf8ff",
+          "on-secondary": "#ffffff",
+          "on-error-container": "#93000a",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#6ffbbe",
+          "error-container": "#ffdad6",
+          "on-primary-container": "#858387",
+          "on-primary-fixed-variant": "#47464a",
+          "on-tertiary-container": "#009668",
+          "primary-container": "#1b1b1e",
+          "secondary": "#4648d4",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container": "#eeedf7",
+          "on-tertiary-fixed": "#002113",
+          "surface-container-highest": "#e3e1ec",
+          "on-surface": "#1a1b22",
+          "inverse-primary": "#c8c5ca",
+          "inverse-on-surface": "#f1effa",
+          "outline-variant": "#c8c5cb",
+          "secondary-container": "#6063ee",
+          "inverse-surface": "#2f3038",
+          "surface-dim": "#dad9e3",
+          "secondary-fixed-dim": "#c0c1ff",
+          "on-tertiary": "#ffffff",
+          "surface": "#fbf8ff",
+          "tertiary-container": "#002113",
+          "on-secondary-fixed-variant": "#2f2ebe",
+          "error": "#ba1a1a",
+          "surface-bright": "#fbf8ff",
+          "outline": "#77767b",
+          "on-surface-variant": "#47464b",
+          "surface-tint": "#5f5e61",
+          "on-primary-fixed": "#1b1b1e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin": "3rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "0.75rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Manrope"
+          ],
+          "headline-lg-mobile": [
+            "Manrope"
+          ],
+          "headline-md": [
+            "Manrope"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Manrope"
+          ],
+          "caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Manrope"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-mono": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Manrope"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "caption": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-surface-variant"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="tracker" href="#"><img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wdn4IsyjTwMWBU1oK5DUJFQBH3aiJziMef1TsFc4OxxsUlgZBtK2E-iHKQotnoBqNopziFOGFbJVsjj8jhcr2ma-OtHwqlrPkazraYY3xdqyOCJ17t3kpa91K9etRKhjmtBCUZJ0CqexRNpcLT6GhwAQ7W5FYDyn0RmXwrElmX6f6CrZ0igf14SOKMCnFkih8CA8SZJTkSUH74XA--q4k1blotoNJ1smtF4wEb1ZXLJ-XqkUkbw4fZ9U0l"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Kuro</span></a><nav class="hidden md:flex items-center gap-space-lg h-16" data-active-classes="text-on-surface font-headline-sm border-b border-primary"><a class="h-full flex items-center text-on-surface font-headline-sm text-body-md border-b-2 border-primary group relative" data-path="tracker" href="#"><span class="pb-0.5">My Tracker</span></a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="discover" href="#"><span class="">Discover &amp; Catalog</span></a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="seasonal" href="#"><span class="">Seasonal</span></a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="stats" href="#"><span class="">Stats</span></a></nav></div><div class="flex items-center gap-space-md"><a class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded border border-surface-variant text-on-surface-variant hover:border-outline transition-colors focus:outline-none" data-path="search" href="#"><span class="material-symbols-outlined text-sm text-outline">search</span><span class="font-body-sm text-body-sm text-outline pr-space-md">Search titles, studios...</span><kbd class="font-label-mono text-caption px-1.5 py-0.5 bg-surface-container-lowest text-on-surface-variant rounded border border-surface-variant">⌘K</kbd></a><button aria-label="Notifications" class="p-1.5 text-on-surface-variant hover:text-on-surface transition-colors rounded focus:outline-none relative group"><span class="material-symbols-outlined text-headline-sm">notifications</span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-surface-variant"><a aria-label="Profile" class="focus:outline-none rounded-full ring-1 ring-surface-variant hover:ring-outline transition-all relative block group" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AEtjO1V_kUAGhAsDpOhhA6-OW2FcGHC8Ar804KbbAoM5mTEULdA02axmIBMZF6yrFB17T2vl6D5f-eqwTupwU2xbnMrL0v7zW9XbAM9a57naRqSchZF8M5GKDQ49JaowYhSd_nPCfEEhRZmaTzRASGdzKCD1khYZJKg4D_6AqN4nMLWPBmYqMKt_TW2JcECopwn_aZfdLx8XkDNRBGjuQM_SuGLrfgHQaxGz9PWvEToajNrmemuQr8ERy7-ainYg"></a></div></div></div></header><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-8 md:py-14 flex items-center justify-center">
+<!-- Central Editorial Container (Dual-Panel Architectural Frame) -->
+<div class="w-full max-w-5xl bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-[680px]">
+<!-- LEFT PANEL: Atmospheric Editorial & Identity Showcase (5 cols) -->
+<div class="lg:col-span-5 bg-primary-container text-on-primary flex flex-col justify-between p-8 md:p-10 relative overflow-hidden">
+<!-- Ambient Decorative Scrim & Japanese Vertical Monogram -->
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-60 h-60 rounded-full bg-tertiary-fixed-dim/10 blur-3xl pointer-events-none"></div>
+<!-- Architectural Backdrop Anime Vignette (Low Opacity Texture) -->
+<div class="absolute inset-0 opacity-15 mix-blend-luminosity bg-cover bg-center pointer-events-none" data-alt="Monochrome cinematic Japanese architectural composition, brutalist concrete library interior with gentle afternoon sunbeams streaming through vertical slit windows, serene meditative atmosphere, high contrast film grain, editorial minimalist aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARSpIUD2kIrsPPhSjDR-FuTEIsvSh0lbn0qNZKTYb92w0UQySBlfxDHtrBzrjfzmQPDYHS15-zXEI4vZYEXt4YAnYOLyaH8zFoplXf6rrZNzkmQ_R8pas3TXnXOg47Xyr2x5eohxb8IvzEfSqC_mXxbrrPCKVykdD1PfX0cV-i0htU2yHDjNglJy4LPuNiW12VTfJt9UV3Hv6Hv2RcTGTPNAE8jOm3H7wt88yn0iG19CrNQO3kKezCwA')">
+</div>
+<!-- Vertical Subtitle Accent for Editorial Texture -->
+<div class="hidden lg:block absolute right-6 top-1/2 -translate-y-1/2 [writing-mode:vertical-rl] select-none pointer-events-none text-on-primary-container/40 font-label-mono text-caption tracking-widest uppercase">
+          ARCHIVAL LEDGER // VER 2.4.0 — 記録の領域
+        </div>
+<!-- Left Header: Identity -->
+<div class="relative z-10 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest/10 p-2 flex items-center justify-center backdrop-blur-md">
+<svg aria-hidden="true" class="w-full h-full text-surface-container-lowest fill-current" viewBox="0 0 100 100">
+<circle cx="50" cy="50" fill="currentColor" fill-opacity="0.15" r="44"></circle>
+<path d="M38 30 L72 50 L38 70 Z" fill="currentColor"></path>
+<circle cx="28" cy="74" fill="currentColor" r="5"></circle>
+<line stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="68" x2="82" y1="20" y2="10"></line>
+<line stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="74" x2="88" y1="28" y2="20"></line>
+</svg>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm tracking-tight text-surface-container-lowest">Kuro</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/15 font-label-mono text-[10px] text-surface-container-lowest uppercase tracking-wider">Log</span>
+</div>
+<p class="font-caption text-caption text-on-primary-container tracking-wide">Archival Watchlist System</p>
+</div>
+</div>
+<div class="mt-4 space-y-2">
+<div class="font-label-mono text-caption text-tertiary-fixed tracking-widest uppercase">
+              静寂と記録のアーカイブ
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-surface-container-lowest tracking-tight leading-snug">
+              A disciplined chronicle for contemplative narratives.
+            </h2>
+<p class="font-body-sm text-body-sm text-on-primary-container pt-1 leading-relaxed">Log completed story arcs, track seasonal transmissions, and archive episode notes in a calm, distraction-free sanctuary.</p>
+</div>
+</div>
+<!-- Left Center: Feature Markers -->
+<div class="relative z-10 my-8 py-5 border-y border-on-primary-container/20 flex flex-col gap-3.5">
+<div class="flex items-center justify-between text-body-sm text-surface-container-lowest/90 font-body-sm">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-tertiary-fixed">tune</span>
+              Tactile Episode Stepper
+            </span>
+<span class="font-label-mono text-caption text-on-primary-container">0.05s Sync</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-surface-container-lowest/90 font-body-sm">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-secondary-fixed">sync_alt</span>
+              AniList &amp; MAL Two-Way Bridge
+            </span>
+<span class="font-label-mono text-caption text-secondary-fixed">Live</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-surface-container-lowest/90 font-body-sm">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-on-primary-container">layers</span>
+              Production Cel Archive
+            </span>
+<span class="font-label-mono text-caption text-on-primary-container">Hi-Res</span>
+</div>
+</div>
+<!-- Left Bottom: Architectural Pullquote / Protocol Validation -->
+<div class="relative z-10 space-y-3">
+<div class="p-3.5 rounded-lg bg-surface-container-lowest/5 backdrop-blur-sm"><div class="flex items-center justify-between text-surface-container-lowest font-label-mono text-caption"> <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span><span class="">PUBLIC ARCHIVE: OPEN</span></div><span class="text-[10px] text-tertiary-fixed px-1.5 py-0.5 rounded bg-surface-container-lowest/10">NO LOGIN NEEDED</span></div><p class="font-caption text-caption text-on-primary-container mt-1.5 leading-relaxed">Discover &amp; Seasonal schedules are freely browsable without an account. Sign in is only required to synchronize My Tracker, personal Stats, Notifications, and your Archivist Account.</p></div>
+<div class="flex items-center justify-between text-on-primary-container/70 font-label-mono text-[10px]">
+<span class="">LOC: TOKYO / CLOUD</span>
+<span class="">SECURE VAULT</span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Authentication Form & SSO Bridges (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 flex flex-col justify-between">
+<div>
+<!-- Tab Segment Control (Sign In vs Create Account) -->
+<div class="flex items-center justify-between pb-6">
+<div class="inline-flex p-1 rounded-lg bg-surface-container">
+<button class="px-5 py-1.5 rounded text-body-sm font-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm" id="tab-login" onclick="switchAuthMode('login')" type="button">
+                Sign In
+              </button>
+<button class="px-5 py-1.5 rounded text-body-sm font-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface" id="tab-register" onclick="switchAuthMode('register')" type="button">
+                Create Account
+              </button>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 text-on-surface-variant font-label-mono text-caption">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span class="">ENCRYPTED PROTOCOL</span>
+</div>
+</div>
+<!-- Dynamic Form Heading -->
+<div class="space-y-1.5 mb-7"><div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono text-caption mb-1"><span class="material-symbols-outlined text-[13px] text-outline">lock</span><span class="">RESTRICTED LEDGER ACCESS</span><span class="text-outline">•</span><span class="text-on-surface">Auth required for Tracker, Stats &amp; Alerts</span></div><h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight" id="auth-title">Welcome back, archivist.</h1><p class="font-body-md text-body-md text-on-surface-variant" id="auth-subtitle">Authenticate your credentials to sync personal watch progress, archive notes &amp; reflections, and manage notifications.</p></div>
+<!-- Instant Anime Platform Integrations (1-Click SSO) -->
+<div class="space-y-2.5 mb-6"><button class="w-full flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors focus:outline-none border border-surface-variant" type="button"><svg class="w-4 h-4" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path></svg><span class="font-label-md text-label-md text-on-surface">Continue with Google</span></button></div>
+<!-- Divider Rule -->
+<div class="relative flex items-center justify-center my-6">
+<div class="w-full h-px bg-surface-variant"></div>
+<span class="absolute bg-surface-container-lowest px-3 font-label-mono text-caption text-outline">OR VIA EMAIL &amp; PASSWORD</span>
+</div>
+<!-- Main Input Form -->
+<form class="space-y-4" id="auth-form" onsubmit="event.preventDefault(); triggerAuthFeedback();">
+<!-- Handle / Email Field -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="identity-input">
+                Archivist Handle or Email
+              </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">alternate_email</span>
+<input class="w-full pl-9 pr-3 py-2.5 rounded bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="identity-input" placeholder="archivist@kuro.media or @ren" required="" type="text">
+</div>
+</div>
+<!-- Optional Name Field for Registration (Hidden initially) -->
+<div class="space-y-1.5 hidden" id="register-name-field">
+<label class="block font-label-md text-label-md text-on-surface" for="name-input">
+                Public Display Alias
+              </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">badge</span>
+<input class="w-full pl-9 pr-3 py-2.5 rounded bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="name-input" placeholder="e.g. Kenji Sato" type="text">
+</div>
+</div>
+<!-- Passphrase Field -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="block font-label-md text-label-md text-on-surface" for="passphrase-input">Password</label>
+<a class="font-label-mono text-caption text-on-surface-variant hover:text-primary transition-colors focus:outline-none" href="#" id="forgot-link">Forgot password?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">lock</span>
+<input class="w-full pl-9 pr-10 py-2.5 rounded bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="passphrase-input" placeholder="••���•••••••••" required="" type="password">
+<button class="absolute right-3 text-outline hover:text-on-surface focus:outline-none p-0.5" onclick="togglePassVisibility()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="pass-toggle-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Utilities: Remember Me & Security Policy -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 select-none cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary focus:ring-primary" id="remember-me" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">
+                  Keep session authenticated (30 days)
+                </span>
+</label>
+</div>
+<!-- Primary Submit Button -->
+<div class="pt-2">
+<button class="w-full py-3 px-6 rounded bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-all" id="submit-btn" type="submit">
+<span id="btn-text" class="">Access Watchlist Archive</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Backlog Importer Callout Banner -->
+<div class="mt-5 p-3.5 rounded-lg bg-surface-container-low border border-surface-variant flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span><div class="space-y-0.5"><p class="font-label-md text-label-md text-on-surface">First time exploring Kuro?</p><p class="font-caption text-caption text-on-surface-variant leading-relaxed">Preview public collections and trending seasonal charts without an account — or sign in to track episodes, sync watch history, and customize your personal journal.</p></div></div>
+</div>
+<!-- Right Panel Bottom Security Marginalia -->
+<div class="pt-6 mt-6 border-t border-surface-variant flex flex-col sm:flex-row items-center justify-between gap-3 text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed-dim">verified</span>
+<span class="">Zero ad-tracking • Sovereignty focused • Local fallback</span>
+</div>
+<div class="flex items-center gap-3 font-label-mono text-[11px]">
+<a class="hover:text-on-surface transition-colors" href="#">PRIVACY PROTOCOL</a>
+<span class="">•</span>
+<a class="hover:text-on-surface transition-colors" href="#">TERMS</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive State Micro-Script -->
+<script>
+    function switchAuthMode(mode) {
+      const isLogin = mode === 'login';
+      const tabLogin = document.getElementById('tab-login');
+      const tabRegister = document.getElementById('tab-register');
+      const authTitle = document.getElementById('auth-title');
+      const authSubtitle = document.getElementById('auth-subtitle');
+      const registerNameField = document.getElementById('register-name-field');
+      const btnText = document.getElementById('btn-text');
+      const forgotLink = document.getElementById('forgot-link');
+
+      if (isLogin) {
+        tabLogin.className = "px-5 py-1.5 rounded text-body-sm font-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm";
+        tabRegister.className = "px-5 py-1.5 rounded text-body-sm font-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+        authTitle.innerText = "Welcome back, archivist.";
+        authSubtitle.innerText = "Enter your credentials to access your watchlist ledger and marginalia.";
+        registerNameField.classList.add('hidden');
+        btnText.innerText = "Access Watchlist Archive";
+        forgotLink.classList.remove('hidden');
+      } else {
+        tabRegister.className = "px-5 py-1.5 rounded text-body-sm font-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm";
+        tabLogin.className = "px-5 py-1.5 rounded text-body-sm font-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+        authTitle.innerText = "Open a Kuro Ledger.";
+        authSubtitle.innerText = "Create a minimalist catalog space for disciplined media consumption.";
+        registerNameField.classList.remove('hidden');
+        btnText.innerText = "Initialize Ledger Account";
+        forgotLink.classList.add('hidden');
+      }
+    }
+
+    function togglePassVisibility() {
+      const input = document.getElementById('passphrase-input');
+      const icon = document.getElementById('pass-toggle-icon');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.innerText = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.innerText = 'visibility';
+      }
+    }
+
+    function triggerAuthFeedback() {
+      const btn = document.getElementById('submit-btn');
+      const originalHtml = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[18px]">sync</span><span>Authenticating Key...</span>`;
+      setTimeout(() => {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">done</span><span>Ledger Unlocked</span>`;
+        btn.classList.remove('bg-primary');
+        btn.classList.add('bg-secondary');
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+          btn.disabled = false;
+          btn.classList.remove('bg-secondary');
+          btn.classList.add('bg-primary');
+        }, 1500);
+      }, 1000);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-mono text-caption"><span class="">KURO ANIME LOG</span><span class="">•</span><span class="">MINIMALIST CATALOG ARCHIVE</span></div><div class="text-on-surface-variant font-caption text-caption">© 2025 Kuro. Architectural tracking for disciplined media consumption.</div></div></footer>
+
+</body></html>

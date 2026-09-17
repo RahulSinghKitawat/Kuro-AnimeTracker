@@ -1,0 +1,661 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#e1e0ff",
+          "on-tertiary-fixed-variant": "#005236",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#000000",
+          "on-primary": "#ffffff",
+          "surface-container-low": "#f4f2fd",
+          "surface-variant": "#e3e1ec",
+          "surface-container-high": "#e8e7f1",
+          "primary-fixed": "#e4e1e6",
+          "primary-fixed-dim": "#c8c5ca",
+          "on-secondary-container": "#fffbff",
+          "primary": "#000000",
+          "on-secondary-fixed": "#07006c",
+          "on-background": "#1a1b22",
+          "background": "#fbf8ff",
+          "on-secondary": "#ffffff",
+          "on-error-container": "#93000a",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#6ffbbe",
+          "error-container": "#ffdad6",
+          "on-primary-container": "#858387",
+          "on-primary-fixed-variant": "#47464a",
+          "on-tertiary-container": "#009668",
+          "primary-container": "#1b1b1e",
+          "secondary": "#4648d4",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container": "#eeedf7",
+          "on-tertiary-fixed": "#002113",
+          "surface-container-highest": "#e3e1ec",
+          "on-surface": "#1a1b22",
+          "inverse-primary": "#c8c5ca",
+          "inverse-on-surface": "#f1effa",
+          "outline-variant": "#c8c5cb",
+          "secondary-container": "#6063ee",
+          "inverse-surface": "#2f3038",
+          "surface-dim": "#dad9e3",
+          "secondary-fixed-dim": "#c0c1ff",
+          "on-tertiary": "#ffffff",
+          "surface": "#fbf8ff",
+          "tertiary-container": "#002113",
+          "on-secondary-fixed-variant": "#2f2ebe",
+          "error": "#ba1a1a",
+          "surface-bright": "#fbf8ff",
+          "outline": "#77767b",
+          "on-surface-variant": "#47464b",
+          "surface-tint": "#5f5e61",
+          "on-primary-fixed": "#1b1b1e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin": "3rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "0.75rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Manrope"
+          ],
+          "headline-lg-mobile": [
+            "Manrope"
+          ],
+          "headline-md": [
+            "Manrope"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Manrope"
+          ],
+          "caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Manrope"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-mono": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Manrope"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "caption": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-surface-variant"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="my-tracker" href="#"><img alt="Brand logo. - Primary color: #1a1a1a
+- Font: spaceGrotesk
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wdn4IsyjTwMWBU1oK5DUJFQBH3aiJziMef1TsFc4OxxsUlgZBtK2E-iHKQotnoBqNopziFOGFbJVsjj8jhcr2ma-OtHwqlrPkazraYY3xdqyOCJ17t3kpa91K9etRKhjmtBCUZJ0CqexRNpcLT6GhwAQ7W5FYDyn0RmXwrElmX6f6CrZ0igf14SOKMCnFkih8CA8SZJTkSUH74XA--q4k1blotoNJ1smtF4wEb1ZXLJ-XqkUkbw4fZ9U0l"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Kuro</span></a><nav class="hidden md:flex items-center gap-space-lg h-16" data-active-classes="text-on-surface font-headline-sm border-b border-primary"><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="my-tracker" href="#">My Tracker</a><a aria-current="page" class="h-full flex items-center transition-colors text-on-surface font-headline-sm border-b border-primary" data-path="discover-and-catalog" href="#">Discover &amp; Catalog</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="seasonal" href="#">Seasonal</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="stats" href="#">Stats</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded border border-surface-variant text-on-surface-variant hover:border-outline transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm text-outline">search</span><span class="font-body-sm text-body-sm text-outline pr-space-md">Search titles, studios...</span><kbd class="font-label-mono text-caption px-1.5 py-0.5 bg-surface-container-lowest text-on-surface-variant rounded border border-surface-variant">⌘K</kbd></div><button aria-label="Notifications" class="p-1.5 text-on-surface-variant hover:text-on-surface transition-colors rounded focus:outline-none"><span class="material-symbols-outlined text-headline-sm">notifications</span></button><div class="flex items-center gap-space-xs pl-space-xs border-l border-surface-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UAZ3r52hCkxfWDimtyiM-6VWVjl6gKxx9pNh4WudEtHdYi7R9ymR7rzkw-Y1DH5UoeRjbmbUHy9gIn3fHDk96YChhBuh68AbgKYWrFzbknDrP2ve3KDMDn1M-PwLBB0x_WA7Au_9kHYVgyCoDoYz4rmAX3w4C_u99Aukq4SZD3wSuc91o8rvZBqVPisB97knITK4LQ0hl-dPXRb9dZyfZ1dk8qEC5Mja63FcuRGAJLTEMal5CVWKReAXZI"></div></div></div></header><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Minimal Header & Discovery Filter Controls -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-lg pb-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-caption uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Archive Issue № 48</span>
+<span class="text-outline-variant">•</span>
+<span>Autumn 2024 Collection</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">Discover &amp; Catalog</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Curated seasonal releases, timeless masterpieces, and community favorites logged for contemplative viewing.
+        </p>
+</div>
+<!-- Quick Search Shell -->
+<div class="w-full md:w-80 flex flex-col gap-space-xs">
+<div class="relative flex items-center bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined absolute left-3 text-outline text-body-lg">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search series, directors, studios..." type="text">
+<span class="absolute right-3 font-label-mono text-caption text-outline bg-surface-container px-1 rounded">⌘K</span>
+</div>
+</div>
+</div>
+<!-- Editorial Tag Suggestions -->
+<div class="flex flex-wrap items-center gap-space-xs pb-space-md">
+<span class="font-label-mono text-caption text-outline uppercase tracking-wider pr-1">Index Tags:</span>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container font-label-mono text-caption text-on-surface hover:bg-surface-variant transition-colors">Cyberpunk</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container font-label-mono text-caption text-on-surface hover:bg-surface-variant transition-colors">Slice of Life</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container font-label-mono text-caption text-on-surface hover:bg-surface-variant transition-colors">Psychological</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container font-label-mono text-caption text-on-surface hover:bg-surface-variant transition-colors">MAPPA</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container font-label-mono text-caption text-on-surface hover:bg-surface-variant transition-colors">Madhouse</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container font-label-mono text-caption text-on-surface hover:bg-surface-variant transition-colors">Fall 2024</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container font-label-mono text-caption text-on-surface hover:bg-surface-variant transition-colors">Science Fiction</button>
+</div>
+<!-- Subtle Database Filters (Notion/Linear Inspired) -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm py-space-sm bg-surface-container-low px-space-md rounded-lg">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative inline-block text-left">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-mono text-caption shadow-sm hover:bg-surface transition-colors" id="seasonDropdownBtn">
+<span class="text-outline">Season:</span>
+<span class="font-medium">Fall 2024</span>
+<span class="material-symbols-outlined text-caption">expand_more</span>
+</button>
+</div>
+<div class="relative inline-block text-left">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-mono text-caption shadow-sm hover:bg-surface transition-colors">
+<span class="text-outline">Format:</span>
+<span class="font-medium">TV Series</span>
+<span class="material-symbols-outlined text-caption">expand_more</span>
+</button>
+</div>
+<div class="relative inline-block text-left">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-mono text-caption shadow-sm hover:bg-surface transition-colors">
+<span class="text-outline">Status:</span>
+<span class="font-medium">Currently Airing</span>
+<span class="material-symbols-outlined text-caption">expand_more</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-caption text-outline">Sort:</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-mono text-caption shadow-sm hover:bg-surface transition-colors">
+<span class="font-medium">Highest Rated</span>
+<span class="material-symbols-outlined text-caption">swap_vert</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Editorial Spotlight: Atmospheric Feature Banner -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-md">
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-high shadow-md">
+<!-- Background Graphic with Cinematic Editorial Scrim -->
+<div class="bg-cover bg-center absolute inset-0 w-full h-full transform scale-105" data-alt="Cinematic high fantasy landscape with soft early morning mist rolling over ancient moss-covered stone bridges and quiet spruce forests. Elegant silver-haired elf sorceress in flowing traveler garments stands peacefully overlooking the peaceful valley, cinematic lighting, muted pastel anime art style, quiet introspective mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCj_CafDeOkVupW0MQm2jj502zi8ugAnXGZufl1XrRJheB-eKCs0qHjdHIOdF_PWU6lf8b56h9KKWReh1dp3wn_mrNjCAPnvDwqdbW3xg8UYHlY9Bf_tzDW2lDZIaA-UIh2HRmRhtTh1oiZ0ZP8IV7UZAnAN1jmLczOXyx1GkrnlyvF5RUD1d128OIp30LgXn3q0oTZSWCUYlg0tiqoTppU-cCVVWuFyK8nKFdcSJiUSrJOpoeR8o5IGA')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/80 to-transparent"></div>
+<!-- Content Container -->
+<div class="relative z-10 p-space-lg lg:p-space-xl flex flex-col justify-between min-h-[380px] max-w-2xl text-on-primary">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/80 text-on-tertiary-container font-label-mono text-caption tracking-wider uppercase font-semibold">Curator Pick</span>
+<span class="text-on-primary-container font-label-mono text-caption">Spotlight № 01</span>
+</div>
+<div class="pt-space-xs">
+<span class="font-headline-sm text-caption text-on-primary-container tracking-widest block pb-0.5">葬送のフリーレン</span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary font-bold tracking-tight">Frieren: Beyond Journey's End</h2>
+</div>
+<div class="flex items-center gap-space-md pt-1 font-label-mono text-caption text-on-primary-container">
+<span>Madhouse Studio</span>
+<span>•</span>
+<span>28 Episodes</span>
+<span>•</span>
+<span class="text-tertiary-fixed font-semibold">★ 9.38 Score</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container/90 pt-space-xs line-clamp-3 leading-relaxed">
+            An introspective meditation on mortality and memory. Decades after the Hero's party conquered the Demon King, an ageless elven mage retraces their steps to comprehend the weight of transient mortal connections.
+          </p>
+</div>
+<div class="pt-space-md flex flex-wrap items-center gap-space-sm">
+<!-- Watchlist Action Dropdown -->
+<div class="relative inline-block text-left" id="spotlightActions">
+<button class="flex items-center gap-2 bg-on-primary text-primary px-4 py-2 rounded-lg font-headline-sm text-headline-sm hover:opacity-95 transition-all shadow-sm" id="spotlightAddBtn">
+<span class="material-symbols-outlined text-body-lg">bookmark_add</span>
+<span>Add to Watchlist</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<div class="hidden absolute left-0 mt-2 w-48 rounded-lg bg-surface-container-lowest shadow-xl py-1 z-30" id="spotlightDropdown">
+<button class="w-full text-left px-4 py-2 text-on-surface font-body-sm text-body-sm hover:bg-surface-container transition-colors flex items-center justify-between">
+<span>Watching</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<button class="w-full text-left px-4 py-2 text-on-surface font-body-sm text-body-sm hover:bg-surface-container transition-colors flex items-center justify-between">
+<span>Plan to Watch</span>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+</button>
+<button class="w-full text-left px-4 py-2 text-on-surface font-body-sm text-body-sm hover:bg-surface-container transition-colors flex items-center justify-between">
+<span>Completed</span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+</button>
+</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest/20 backdrop-blur-md text-on-primary hover:bg-surface-container-lowest/30 transition-colors font-headline-sm text-headline-sm">
+            Read Architectural Review
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Strip: Top Airing This Season -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-lg pb-space-sm">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Top Airing This Season</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active broadcasts currently indexed in the communal register.</p>
+</div>
+<div class="flex items-center gap-space-xs font-label-mono text-caption text-on-surface-variant">
+<span>01</span>
+<span class="w-8 h-[1px] bg-surface-variant"></span>
+<span>05</span>
+</div>
+</div>
+<!-- Horizontal Airing Strip -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-space-md">
+<!-- Card 1 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial anime poster art for Dandadan featuring subtle paranormal urban lighting, energetic neon accents against muted industrial backdrops, high fashion streetwear character silhouettes in detailed ink linework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASEFN2Ag1_NLjnWS67__2HpoN50IcSGyaiPB__egQIuRUO8wQm_PqZAy-wpfHBduBPH1LBp3r3XfQ5rvGTS9g2Z81OvBMIJXw7A_l9WkBceOPZuDvzCxKMJGudE0necuRZClrfqb5f1Ck_8Z8_wvthbKXH-gbgSZ0nLIjYhf30H-zFdPKfYtqQgz-tklHu_9LV7FyK6atv2TQaoG9o9FzcxSNnPSnoPmaXnTf96Xc9TyLn_I6iy-RSUw">
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.8
+          </div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption text-secondary font-medium">
+            Ep 8 in 2 days
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-grow justify-between gap-1">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">Dandadan</h4>
+<p class="font-label-mono text-caption text-on-surface-variant">Science SARU • Action</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-mono text-caption text-outline">TV • Fall 24</span>
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" title="Quick Add">
+<span class="material-symbols-outlined text-caption">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial anime poster for Re:Zero Season 3 depicting a dark fantasy city square under moonlight, silver-haired priestess with delicate ribbons and solemn expression, subtle violet tones, clean minimalist composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIPLp_4mmkDVXmpK9-MG52-QRhnlnsGD1NOFczaz1-7wwneR8E2EFWXg6UvoExgjsBv6hxgLpqD_9RiJ3Dk8U5Hd7TeKgW2Z7Q1FDOY1AZ_M4hbCVXBCi83WYcphSkDY5yvDTSAySoPvPkbLHOXDv9Lnp-Z2rEUB7uT-Aphc5K-wRrZT9jTasxXH-VoB8g_IafOW1SFmc-oZSSN2rEG0DCIra0sWSzXfqvPf6uWCvZ5vIxjoOvE0nCXg">
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.7
+          </div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption text-secondary font-medium">
+            Ep 7 in 4 days
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-grow justify-between gap-1">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">Re:Zero − Starting Life in Another World S3</h4>
+<p class="font-label-mono text-caption text-on-surface-variant">White Fox • Drama</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-mono text-caption text-outline">TV • 16 Eps</span>
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" title="Quick Add">
+<span class="material-symbols-outlined text-caption">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist anime poster art for Blue Lock Season 2 featuring a dynamic high contrast blue grid pattern, focused striker eyes in intense close-up, sharp athletic angles, monochrome ink aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEwUCUY62-UFElA05u4zULdHvvvZK-146FJ99qPpNXwCv9TtMKJ60On-5XQ9Ix0rxb98kQcQclr8tE6N_qOaOwfWytmk5opeFk-dsSeLKP4kbdk_2G_OuixBCRgnzt-shhB025AHfaRXBphpFzOMOsv1g8LDx_rlYQJ0W93vkoCCIoBP8gR7py-pSiJgoKIp7KwtOro2dt4cBbPDKYTeuPYg2N_L7B-bgrhJhDaxOnXjKIW6m26p9l9w">
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 7.9
+          </div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption text-secondary font-medium">
+            Ep 6 in 5 days
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-grow justify-between gap-1">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">Blue Lock: VS. U-20 Japan</h4>
+<p class="font-label-mono text-caption text-on-surface-variant">8bit • Sports</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-mono text-caption text-outline">TV • 14 Eps</span>
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" title="Quick Add">
+<span class="material-symbols-outlined text-caption">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Soft atmospheric anime visual for Ranma 1/2 remake featuring tranquil traditional Japanese hot spring rooftop, pastel watercolor sunset sky, charming retro aesthetic rendered with crisp modern precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClgewnm44tkNDL3hgEPZ4H2h0EbxqKjWhZgCCsw7a5lolhTOoMtFkRd6lhY45qlMl9JK2ZRy-sTuiFM39RdziaRf-X2a4ykb1XVoUmvSgfYZskBYOlNN10ywApa4eGvRZt_AAkqvP4FsflM8gJ3J44qgjiLwA4gFxClXhRQUL6QY8lF5oWh-ZHdx_uDUmOeNrrpuhCHvCpQ13fGBK9RBnyeU2cZNMNuQacdaj2LipYoifuKG0eEYZK2w">
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.1
+          </div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption text-secondary font-medium">
+            Ep 8 in 6 days
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-grow justify-between gap-1">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">Ranma 1/2 (2024)</h4>
+<p class="font-label-mono text-caption text-on-surface-variant">MAPPA • Comedy</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-mono text-caption text-outline">TV • 12 Eps</span>
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" title="Quick Add">
+<span class="material-symbols-outlined text-caption">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all hidden lg:flex">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Introspective anime poster featuring an apothecary girl holding rare herbs in a traditional imperial Chinese palace courtyard, soft lantern lighting, elegant vermilion and celadon green tones, detailed historical architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFH0cX1L9luQ62Fhlbr0oK5bdcFcmO1FtNurk7IPvaQ1k2anUdDcVaUB2AtjCiPXJ8hv-7hypDspvrgn0TS5Hn8kvoRlGueNa7vjqkue70e93kafo2x6E_wdRfu238l3-SvbRI8jBwAnkgNbOyrIYX5BqArij72HFjCG3DQ32JluVX_hKsM7BST9ODXcRyvvaYItLtUo2A82iWGcJQSmhK-qSPLhwZdXOIYqQVvsEIzUU7g_GEXYVbRQ">
+<div class="absolute top-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.9
+          </div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-mono text-caption text-outline font-medium">
+            Winter Season
+          </div>
+</div>
+<div class="p-space-sm flex flex-col flex-grow justify-between gap-1">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">The Apothecary Diaries S2</h4>
+<p class="font-label-mono text-caption text-on-surface-variant">OLM / TOHO • Mystery</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-mono text-caption text-outline">Upcoming</span>
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" title="Quick Add">
+<span class="material-symbols-outlined text-caption">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Catalog Grid: Timeless Masterpieces -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-outline font-label-mono text-caption uppercase tracking-wider pb-1">
+<span>Permanent Collection</span>
+<span>•</span>
+<span>Archival Canon</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Timeless Masterpieces</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Foundational works distinguished by structural narrative mastery and timeless visual direction.</p>
+</div>
+<!-- Segmented Category Filters -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1 text-on-surface bg-surface-container-lowest font-body-sm text-body-sm font-medium rounded shadow-sm">All Canon</button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors">Psychological</button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors">Sci-Fi</button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors">Cinematic</button>
+</div>
+</div>
+<!-- 6-Column High Density Editorial Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-gutter">
+<!-- Masterpiece 1 -->
+<div class="flex flex-col group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container mb-space-xs shadow-sm group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial poster for Cowboy Bebop featuring Spike Spiegel silhouette backlit by retro neon signage in a jazz club alleyway, smoked glass reflections, moody 90s anime aesthetic, deep midnight blue and sepia tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXDt9pw30Cf5s1AhvRARgrwiUY-S8N1jhhFqOMb0AhRtQ6Tz4tEZr8hBhrKwEsQjn2ziOCgwBdfV_Dd9BeAX57Ja-DUA4q9zrwYBsbjOpJyvhVXnu8NsdwUja76MZHva5xaNRqlMsmDcPOzsCsHbYyq-3LfN2RzMZKxxG5ViGWPz50Q6yF_WjzMbLkFJa2Hc8OfZLc9hplPiyru9b5vneyA3ZkckEBeqbiiDydaV2kgtLqAMRqOOwZQg">
+<div class="absolute top-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm px-1.5 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.9
+          </div>
+<button class="absolute bottom-2 right-2 w-7 h-7 rounded-md bg-surface-container-lowest text-on-surface shadow-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-surface-variant">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+</button>
+</div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-medium truncate pt-1">Cowboy Bebop</h4>
+<span class="font-label-mono text-caption text-on-surface-variant">Sunrise • 1998</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Sci-Fi</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Noir</span>
+</div>
+</div>
+<!-- Masterpiece 2 -->
+<div class="flex flex-col group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container mb-space-xs shadow-sm group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist cinematic anime poster for Neon Genesis Evangelion featuring Eva Unit-01 profile in geometric silhouette against a stark blood-red moon, subtle typography, architectural lines, clinical psychological mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmYxnghO7jaGCilA_1raoL0IA2SKCtzNJ-R2R3MT7S3h4fdC0BMihspjq91L6vSfW5Dc3V3MqcKMsAZkeyFlV7h7GsPBym80VHaIKp69LkA3r9y1LPi5eg0emnHSQOf6ywV4B0OcZW2f5zg6hgkeVS-Fz71GeeoEvboPYSyGuKnw3i1riXEaHi8-enM0bdctFzqipRL5k2-DS0lWh71Kd9bRsgdlgi2nIW_Q8LNgCy0pg3tuV-n0y5IA">
+<div class="absolute top-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm px-1.5 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.5
+          </div>
+<button class="absolute bottom-2 right-2 w-7 h-7 rounded-md bg-surface-container-lowest text-on-surface shadow-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-surface-variant">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+</button>
+</div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-medium truncate pt-1">Neon Genesis Evangelion</h4>
+<span class="font-label-mono text-caption text-on-surface-variant">Gainax • 1995</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Mecha</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Psych</span>
+</div>
+</div>
+<!-- Masterpiece 3 -->
+<div class="flex flex-col group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container mb-space-xs shadow-sm group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial visual for Monster featuring a cold rainy street in Düsseldorf, shadowy silhouette of Johan Liebert under streetlamp glare, muted charcoal and slate grey color palette, European graphic novel styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVS4qPCzV7PGuwDE6zPO1FIYSuzy9vKgHrgCD8BmoWmzEqsRW19lzOh0WglzzJlqn_RpYYiKX0UyL1UelxnTZ936ZfTqlHxpXI8kGq6i5WEJoNjes9WVKv9YIfnCSPyHpIW95zKnYjlD45ov4K12NxP8gN14QycF4nFMBeEEfalyuSOKkQUgi2XClvi0eTP_KQqGVDmDPrkw_T-rkT_6ziWUadXfNhXBMtCdAYYtn_NJjNVnRUcDVqVg">
+<div class="absolute top-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm px-1.5 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 9.1
+          </div>
+<button class="absolute bottom-2 right-2 w-7 h-7 rounded-md bg-surface-container-lowest text-on-surface shadow-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-surface-variant">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+</button>
+</div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-medium truncate pt-1">Monster</h4>
+<span class="font-label-mono text-caption text-on-surface-variant">Madhouse • 2004</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Thriller</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Mystery</span>
+</div>
+</div>
+<!-- Masterpiece 4 -->
+<div class="flex flex-col group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container mb-space-xs shadow-sm group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tranquil cinematic poster for Mushishi depicting Ginko walking through a lush primeval Japanese cedar forest filled with ethereal glowing floating microbial life forms, soft mist, deep viridian and earth tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkDypja_7SiIWsj-DCUjwCzuP2XoUOTZowzWvqSDo9Gd2n3oSRS8BLoMbJG7FRTWKl2GMXQdthnL81yiDQXWiNigu6c-AK46xY-0qAe1i-YFvuBHmh9EwiNXotqUFyhQUoOJdMsqip-Siwq8ZIQu4larpccwsjNuHUwfVtB85sdSUPFG16VMyHULnqrkAXDEZkuu32ok0DvS79Ff9zJ6lGp2izTTE4IvyjEwLhTmscqEHqccNPNMTpJQ">
+<div class="absolute top-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm px-1.5 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.8
+          </div>
+<button class="absolute bottom-2 right-2 w-7 h-7 rounded-md bg-surface-container-lowest text-on-surface shadow-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-surface-variant">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+</button>
+</div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-medium truncate pt-1">Mushishi: Zoku Shou</h4>
+<span class="font-label-mono text-caption text-on-surface-variant">Artland • 2014</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Folklore</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Iyashikei</span>
+</div>
+</div>
+<!-- Masterpiece 5 -->
+<div class="flex flex-col group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container mb-space-xs shadow-sm group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Atmospheric poster for Ghost in the Shell: Stand Alone Complex featuring Motoko Kusanagi in cybernetic reflection over a sprawling megalopolis highway system at twilight, teal wireframes, disciplined typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVy7fBG9ND6bsM7fSBNHLudODAuXemupX93Ry_Nm94kBBw8ytss3LdePEA0zPzF7rE2Marll31UoV7q463ufuc0SK67hh2-8ZmHg42nAL7fat6G3Muh41n0lOK4URbIv22Ni6svQussIXvDTByf7MrBDe7RjVPY3YBBqByqzsP56e2gll4n-y0Tr2NSbBdlig_-AarZva27Ww5Kfs4cWn-33x-8W8NWXySJ_1nl8JOKPAZ9MiCn9vo7A">
+<div class="absolute top-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm px-1.5 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.5
+          </div>
+<button class="absolute bottom-2 right-2 w-7 h-7 rounded-md bg-surface-container-lowest text-on-surface shadow-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-surface-variant">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+</button>
+</div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-medium truncate pt-1">Ghost in the Shell: SAC</h4>
+<span class="font-label-mono text-caption text-on-surface-variant">Production I.G • 2002</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Cyberpunk</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Police</span>
+</div>
+</div>
+<!-- Masterpiece 6 -->
+<div class="flex flex-col group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden bg-surface-container mb-space-xs shadow-sm group-hover:shadow-md transition-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial poster for Vinland Saga featuring Thorfinn looking toward a northern coastal horizon with towering fjords and calm arctic waters, subtle hand-drawn ink texture, cold steel and slate blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBNYYfoKx8-zaVMmAs9IZFvD68W-cROpKm38zOwtrsvtPvL96PVY6NLNYRZrXxLZeCjW8FuWW1n7BU6GCYNsHR1HmTYtK007tRxMXSWC6mwnz-urJDvJi7FnbH-fZAdpNGGj2d_ZkUswbqyr1F12167YK4h3cHDoVrIMPPvyWZFXuxpSSWxghiViY15S6Jh2gRb0kyJUUu3vV38Ms21fVLmleGqg1-_UtkQcPIGC8IH2D_ALyUsE1Hxw">
+<div class="absolute top-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm px-1.5 py-0.5 rounded font-label-mono text-caption font-semibold text-on-surface">
+            ★ 8.8
+          </div>
+<button class="absolute bottom-2 right-2 w-7 h-7 rounded-md bg-surface-container-lowest text-on-surface shadow-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-surface-variant">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+</button>
+</div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-medium truncate pt-1">Vinland Saga S2</h4>
+<span class="font-label-mono text-caption text-on-surface-variant">MAPPA • 2023</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Historical</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-mono text-caption text-on-surface-variant">Drama</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Archival Digest & Data Vignette -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pb-space-xl">
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-xl">
+<span class="font-label-mono text-caption text-secondary uppercase font-semibold tracking-wider">Catalog Statistics</span>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Communal Archival Metric</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Over 14,820 historical entries cataloged across 5 decades of Japanese animation history. Zero algorithmic advertisements, purely user-maintained historical logs.
+        </p>
+</div>
+<!-- Minimal Inline Sparkline / Metric Visualizer -->
+<div class="flex items-center gap-space-lg w-full lg:w-auto justify-between lg:justify-end">
+<div class="flex flex-col">
+<span class="font-label-mono text-caption text-outline">Active Trackers</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">32.4k</span>
+<span class="font-label-mono text-caption text-on-tertiary-container">↑ 12% this cycle</span>
+</div>
+<div class="h-10 w-[1px] bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-mono text-caption text-outline">Mean Rating</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">7.82</span>
+<span class="font-label-mono text-caption text-outline">Normal distribution</span>
+</div>
+<div class="h-10 w-[1px] bg-surface-variant hidden sm:block"></div>
+<div class="hidden sm:flex flex-col items-center">
+<!-- Small SVG Distribution Chart -->
+<svg class="w-28 h-12 text-secondary" fill="none" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 38 Q 25 38 40 25 T 60 5 T 80 30 T 100 38" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M0 38 Q 25 38 40 25 T 60 5 T 80 30 T 100 38 L 100 40 L 0 40 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+<span class="font-label-mono text-caption text-outline pt-1">Distribution curve</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Minimal dropdown interaction for the Spotlight Add-to-Watchlist button
+  const spotlightAddBtn = document.getElementById('spotlightAddBtn');
+  const spotlightDropdown = document.getElementById('spotlightDropdown');
+
+  if (spotlightAddBtn && spotlightDropdown) {
+    spotlightAddBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      spotlightDropdown.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      if (!spotlightDropdown.classList.contains('hidden')) {
+        spotlightDropdown.classList.add('hidden');
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-mono text-caption"><span>KURO ANIME LOG</span><span>•</span><span>MINIMALIST CATALOG ARCHIVE</span></div><div class="text-on-surface-variant font-caption text-caption">© 2025 Kuro. Architectural tracking for disciplined media consumption.</div></div></footer></body></html>
