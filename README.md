@@ -1,7 +1,7 @@
 # 🎬 Kuro Anime Tracker
 
 A sleek, full-stack web application designed to help users search for anime, manage their personal watchlists, log daily viewing journals, and track their watch statistics in a clean dark-mode interface.
-<br><br>Live :- https://kuro-anime-tracker.vercel.app
+<br><br>Live :- https://kuro-anime-tracker.vercel.app<br>
 ---
 
 ## 💡 What the Website Does (Core Features)
